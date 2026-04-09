@@ -1,2 +1,3 @@
 # web-dev
-this is project 
+this is my 1st project on web dev
+
