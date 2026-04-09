@@ -1,13 +1,145 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Document</title>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Prakash Kumar Jha | Portfolio</title>
+  <link rel="stylesheet" href="style.css" />
+  <link
+    rel="stylesheet"
+    href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.0/css/all.min.css"
+  />
 </head>
 <body>
-    <h1>Hello World</h1>
-    <p>This is a simple HTML document.</p>
+  <header class="header">
+    <nav class="navbar container">
+      <div class="logo">Prakash<span>.</span></div>
+      <ul class="nav-links" id="navLinks">
+        <li><a href="#home">Home</a></li>
+        <li><a href="#about">About</a></li>
+        <li><a href="#skills">Skills</a></li>
+        <li><a href="#academics">Academics</a></li>
+        <li><a href="#contact">Contact</a></li>
+      </ul>
+      <button class="menu-btn" id="menuBtn">
+        <i class="fa-solid fa-bars"></i>
+      </button>
+    </nav>
+  </header>
 
+  <section class="hero" id="home">
+    <div class="container hero-content">
+      <div class="hero-text">
+        <p class="tag">Student Portfolio</p>
+        <h1>Hello, I'm <span>Prakash Kumar Jha</span></h1>
+        <h2>B.Tech CSE | Frontend Learner</h2>
+        <p>
+          I am a 2nd year B.Tech CSE student passionate about web development.
+          I enjoy building clean, responsive, and user-friendly websites using
+          HTML, CSS, and JavaScript.
+        </p>
+        <div class="hero-buttons">
+          <a href="#contact" class="btn primary-btn">Contact Me</a>
+          <a href="https://github.com/prakashjha2004" target="_blank" class="btn secondary-btn">GitHub</a>
+        </div>
+      </div>
+
+      <div class="hero-card">
+        <div class="profile-box">
+          <img src="https://via.placeholder.com/300x320.png?text=Profile+Photo" alt="Profile Photo" />
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <section class="section" id="about">
+    <div class="container">
+      <h2 class="section-title">About Me</h2>
+      <div class="card">
+        <p><strong>Name:</strong> Prakash Kumar Jha</p>
+        <p><strong>Roll No:</strong> 11500224011</p>
+        <p><strong>Class:</strong> B.Tech CSE 2nd Year</p>
+        <p><strong>College:</strong> B.P. Poddar Institute of Management and Technology</p>
+        <p>
+          <strong>Career Goal:</strong> To become a skilled software developer and
+          build impactful digital products.
+        </p>
+      </div>
+    </div>
+  </section>
+
+  <section class="section alt-bg" id="skills">
+    <div class="container">
+      <h2 class="section-title">Skills</h2>
+      <div class="skills-grid">
+        <div class="skill-card">HTML</div>
+        <div class="skill-card">CSS</div>
+        <div class="skill-card">JavaScript</div>
+        <div class="skill-card">Responsive Design</div>
+        <div class="skill-card">Git & GitHub</div>
+        <div class="skill-card">Problem Solving</div>
+      </div>
+    </div>
+  </section>
+
+  <section class="section" id="academics">
+    <div class="container">
+      <h2 class="section-title">Academic Performance</h2>
+      <div class="academic-grid">
+        <div class="academic-card">
+          <h3>10th Grade</h3>
+          <p>75%</p>
+        </div>
+        <div class="academic-card">
+          <h3>12th Grade</h3>
+          <p>60%</p>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <section class="section alt-bg">
+    <div class="container">
+      <h2 class="section-title">Social Links</h2>
+      <div class="social-links">
+        <a href="https://www.linkedin.com/in/prakash-kumar-jha-516b4b311?utm_source=share_via&utm_content=profile&utm_medium=member_android" target="_blank" class="social-card">
+          <i class="fa-brands fa-linkedin"></i>
+          <span>LinkedIn</span>
+        </a>
+        <a href="https://github.com/prakashjha2004" target="_blank" class="social-card">
+          <i class="fa-brands fa-github"></i>
+          <span>GitHub</span>
+        </a>
+      </div>
+    </div>
+  </section>
+
+  <section class="section" id="contact">
+    <div class="container">
+      <h2 class="section-title">Contact Me</h2>
+      <div class="contact-box">
+        <p><i class="fa-solid fa-envelope"></i> <a href="mailto:jhapk84971@gmail.com">jhapk84971@gmail.com</a></p>
+        <p><i class="fa-solid fa-phone"></i> <a href="tel:8651578510">8651578510</a></p>
+      </div>
+
+      <form class="contact-form" id="contactForm">
+        <input type="text" id="name" placeholder="Your Name" required />
+        <input type="email" id="email" placeholder="Your Email" required />
+        <textarea id="message" rows="5" placeholder="Your Message" required></textarea>
+        <button type="submit" class="btn primary-btn">Send Message</button>
+        <p id="formMessage"></p>
+      </form>
+    </div>
+  </section>
+
+  <footer class="footer">
+    <p>© 2026 Prakash Kumar Jha | All Rights Reserved</p>
+  </footer>
+
+  <button id="scrollTopBtn" title="Go to top">
+    <i class="fa-solid fa-arrow-up"></i>
+  </button>
+
+  <script src="script.js"></script>
 </body>
 </html>
